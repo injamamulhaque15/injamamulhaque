@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Injamamul Haque — Portfolio</title>
+<title>Injamamul Haque — EEE Portfolio</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#070B09; --panel:#0F1713; --panel-2:#14221A; --line:rgba(18, 51, 68, 0.22);
+  --bg:#070B09; --panel:#0F1713; --panel-2:#14221A; --line:rgba(32, 151, 164, 0.22);
   --copper:#10B981; --teal:#34D399; --text:#ECFDF5; --muted:#9CA3AF;
   
   /* Skills Purple Accent Theme */
@@ -309,6 +309,29 @@ section{padding:90px 0; border-top:1px solid var(--line); position:relative; z-i
   color:var(--muted); font-size:.82rem; border-radius:8px; text-align:center;
   background:var(--panel-2); position:relative; cursor:pointer; overflow:hidden;
 }
+
+/* per-project accent themes */
+.project-card{border-top:3px solid var(--line);}
+.project-card h3{transition:color .2s;}
+.project-card.p-cyan{border-top-color:#22d3ee;}
+.project-card.p-cyan .project-icon-top{background:rgba(34,211,238,.12); border-color:#22d3ee; box-shadow:0 0 18px rgba(34,211,238,.25);}
+.project-card.p-cyan h3{color:#67e8f9;}
+.project-card.p-cyan .project-tags span{color:#22d3ee; border-color:rgba(34,211,238,.4); background:rgba(34,211,238,.08);}
+
+.project-card.p-amber{border-top-color:#f59e0b;}
+.project-card.p-amber .project-icon-top{background:rgba(245,158,11,.12); border-color:#f59e0b; box-shadow:0 0 18px rgba(245,158,11,.25);}
+.project-card.p-amber h3{color:#fbbf24;}
+.project-card.p-amber .project-tags span{color:#f59e0b; border-color:rgba(245,158,11,.4); background:rgba(245,158,11,.08);}
+
+.project-card.p-green{border-top-color:#34d399;}
+.project-card.p-green .project-icon-top{background:rgba(52,211,153,.12); border-color:#34d399; box-shadow:0 0 18px rgba(52,211,153,.25);}
+.project-card.p-green h3{color:#6ee7b7;}
+.project-card.p-green .project-tags span{color:#34d399; border-color:rgba(52,211,153,.4); background:rgba(52,211,153,.08);}
+
+.project-card.p-pink{border-top-color:#f472b6;}
+.project-card.p-pink .project-icon-top{background:rgba(244,114,182,.12); border-color:#f472b6; box-shadow:0 0 18px rgba(244,114,182,.25);}
+.project-card.p-pink h3{color:#f9a8d4;}
+.project-card.p-pink .project-tags span{color:#f472b6; border-color:rgba(244,114,182,.4); background:rgba(244,114,182,.08);}
 .media-preview{width:100%; max-height:160px; object-fit:cover; border-radius:6px; margin-top:8px; display:none;}
 .media-slot.has-media .media-placeholder-text{display:none;}
 .media-slot.has-media .media-preview{display:block;}
@@ -743,7 +766,7 @@ footer{text-align:center; padding:40px 0; color:var(--muted); border-top:1px sol
       <p>Explore my Arduino and ESP32 based hardware, automation, and embedded systems projects (Total 4 Projects)</p>
     </div>
     <div class="projects-grid">
-      <div class="project-card">
+      <div class="project-card p-cyan">
         <div>
           <div class="project-icon-top">📱</div>
           <h3>Home Automation System Control with Phone</h3>
@@ -757,7 +780,7 @@ footer{text-align:center; padding:40px 0; color:var(--muted); border-top:1px sol
         </div>
       </div>
 
-      <div class="project-card">
+      <div class="project-card p-amber">
         <div>
           <div class="project-icon-top">🚗</div>
           <h3>Surveillance Car with Pan-Tilt Mecanum Wheel</h3>
@@ -771,7 +794,7 @@ footer{text-align:center; padding:40px 0; color:var(--muted); border-top:1px sol
         </div>
       </div>
 
-      <div class="project-card">
+      <div class="project-card p-green">
         <div>
           <div class="project-icon-top">🌱</div>
           <h3>Greenhouse Environmental Control System</h3>
@@ -785,7 +808,7 @@ footer{text-align:center; padding:40px 0; color:var(--muted); border-top:1px sol
         </div>
       </div>
 
-      <div class="project-card">
+      <div class="project-card p-pink">
         <div>
           <div class="project-icon-top">🧪</div>
           <h3>Smart Digital Logic Trainer Board</h3>
